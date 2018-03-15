@@ -9,5 +9,15 @@ public class TupleDemo {
 
         Tuple<String, Integer> person = new Tuple<>("Rahim", 45);
         person.showTypeAndValue();
+
+
+        Tuple<String, Tuple> tupleInsideTuple = new Tuple<>("Tuple",
+                new Tuple<>(1, 2));
+
+        String s = tupleInsideTuple.getTypeOne();
+
+        Tuple t = tupleInsideTuple.getTypeTwo();
+
+
     }
 }
